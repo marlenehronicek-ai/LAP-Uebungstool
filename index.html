@@ -2526,8 +2526,6 @@ const App = {
     checkBtn.style.display = 'none';
 
     const tryConnect = () => {
-      if (selectedLeftIdx === null) return;
-      // Check if all left items are matched
       if (matches.every(m => m !== null)) checkBtn.style.display = '';
     };
 
@@ -2806,4 +2804,3 @@ document.addEventListener('DOMContentLoaded', () => App.init());
 </script>
 </body>
 </html>
-
